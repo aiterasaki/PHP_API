@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    .disable {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form action="">
+      <div class="mb-3">
+        <label for="name" class="form-label">name</label>
+        <input type="text" class="form-control" id="name">
+      </div>
+      <div class="mb-3">
+        <label for="memo" class="form-label">memo</label>
+        <textarea type="textarea" class="form-control" id="memo"></textarea>
+      </div>
+      <button id="inputbtn" type="button" class="btn btn-dark" onclick="createClickBtn()">作成</button>
+      <button id="updatebtn" type="button" class="btn btn-dark" onclick="updateClickBtn()">変更</button>
+    </form>
+    <br />
+    <button id ="outputbtn" type="button" class="btn btn-dark" onclick="outputClickBtn()">出力</button>
+    <br />
+    <table id="list-table" class="">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>名前</th>
+          <th>メモ</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>
