@@ -44,11 +44,6 @@ function outputHTML(res) {
   })
 }
 
-function outputClickBtn() {
-  // PHPにGETする。(リクエスト送信)
-  renderListTable()
-};
-
 function createClickBtn() {
   const json_data = { name: '', memo: '' };
   json_data.name = document.getElementById("name").value
